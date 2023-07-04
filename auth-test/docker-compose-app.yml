@@ -1,0 +1,16 @@
+version: '3.9'
+services:
+  auth:
+    image: skeet15/auth-vivelibre
+    ports:
+      - 8080:8080
+  app:
+    image: acortesmaqueda/auth-test
+    ports:
+      - 8081:8081
+    environment:
+      - AUTH_USERNAME=***
+      - AUTH_PASS=***
+      - AUTH_HOST_URL=http://auth:8080
+    depends_on:
+      - auth

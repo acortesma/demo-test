@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: test-demo-auth
+
+ai.auth-client:
+  username: name
+  password: pass
+  url: http://localhost:8081

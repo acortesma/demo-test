@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: test-demo-auth
+server:
+  port: 8081
+
+ai.auth-client:
+  username: ${AUTH_USERNAME}
+  password: ${AUTH_PASS}
+  url: ${AUTH_HOST_URL}
