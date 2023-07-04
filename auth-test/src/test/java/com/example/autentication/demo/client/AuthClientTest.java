@@ -27,7 +27,7 @@ class AuthClientTest {
   private AuthClient authClient;
 
   @Test
-  void name() {
+  void should_return_valid_token_if_credentials_are_valid() {
 
     stubFor(
       post(urlPathEqualTo("/token"))

@@ -27,7 +27,7 @@ class AuthIntegrationTest {
   private WebTestClient webTestClient;
 
   @Test
-  void should_return_successfully_token() {
+  void should_return_successfully_valid_token_with_date_request() {
 
     stubFor(
       post(urlPathEqualTo("/token"))

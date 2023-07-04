@@ -1,6 +1,6 @@
 spring:
   application:
-    name: test-demo-auth
+    name: auth-test
 server:
   port: 8081
 

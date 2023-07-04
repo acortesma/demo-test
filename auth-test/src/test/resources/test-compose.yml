@@ -4,5 +4,4 @@ services:
     image: skeet15/auth-vivelibre
     ports:
       - 8081:8080
-    labels:
-      org.springframework.boot.readiness-check.tcp.disable: true
+
